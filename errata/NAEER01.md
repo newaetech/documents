@@ -1,18 +1,21 @@
 # NewAE Errata Note 01
 
 **Product**: ChipSHOUTER
+
 **Summary**: The output protection resistors can fail, giving a permanent "probe open" fault that does not clear.
+
 **User Can Diagnose**: Yes
+
 **User Can Fix or Workaround**: No
 
 ## Symptoms & Troubleshooting
 
-The user will always see the "OPEN" LED on the enclosure light up.
+The user will always see the "Open" LED on the enclosure light up.
 
-Please test:
+Testing method:
 
 1. Use different probe tips - the tips could have an internal open.
-2. You can measure the "detection voltage" to see if the output resistor is working correctly.
+2. If Open light is still on, perform a "detection voltage" measurement to see if the output resistor is working correctly or is high resistance.
 
 ### Measuring Detection Voltage
 
@@ -21,11 +24,14 @@ To do this test, you will need a multimeter and a 1K-ohm resistor.
 1. With the probe tip removed, measure the voltage at the output of the ChipSHOUTER SMA with the unit powered up. The negative lead goes to the SMA shield, and the positive leg goes to the SMA center pin. It should read 15-20V.
 2. Using a 1K-ohm resistor, short the center pin of the SMA to the outside shield of the SMA. Measure the voltage at the center pin of the SMA again.
 
+TODO - need to add measurements here (errata in progress).
 
 
 ## Repair
 
 The repair involves replacing the resistor. This cannot be performed at the user site as the ChipSHOUTER high voltage portions of the board have a 2-stage coating that requires a heat cure. The repair involves removing the coating, replacing the part, and replacing the coating.
+
+The repaired units (as well as newly built units) use a different part with improved pulse power ratings.
 
 ## Notes
 
